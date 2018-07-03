@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    if @student.active == true
+    if @student.active
       @student.active = false
     else
       @student.active = true
